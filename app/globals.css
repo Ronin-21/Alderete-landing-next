@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-primary;
+  }
+}
+
+#root {
+  min-height: 100dvh;
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+
+.rfm-initial-child-container {
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.rfm-marquee {
+  justify-content: space-evenly;
+  width: 100%;
+}

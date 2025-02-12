@@ -6,11 +6,15 @@ import Footer from "@/components/Footer";
 
 const fontExo = Exo_2({
   variable: "--font-exo",
+  subsets: ["latin", "latin-ext"], // Aquí puedes agregar los subconjuntos que necesites
+  preload: true, // Asegúrate de que esté habilitado si lo deseas
 });
 
 const fontLato = Lato({
   variable: "--font-lato",
   weight: ["100", "300", "400", "700", "900"],
+  subsets: ["latin", "latin-ext"], // Aquí puedes agregar los subconjuntos que necesites
+  preload: true, // Asegúrate de que esté habilitado si lo deseas
 });
 
 export const metadata: Metadata = {

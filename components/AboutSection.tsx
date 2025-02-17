@@ -3,8 +3,8 @@ import Image from "next/image";
 const AboutSection = () => {
   return (
     <div className="pt-24 pb-32 bg-background" id="about">
-      <div className="container flex items-center justify-around mx-auto">
-        <div className="max-w-[600px] flex flex-col items-start gap-8">
+      <div className="container flex flex-col xl:flex-row items-center justify-around mx-auto gap-20">
+        <div className="2xl:max-w-[600px] xl:w-1/2 flex flex-col items-start gap-8">
           <p className="text-3xl font-semibold font-title text-primary-dark">
             Soluciones Tecnológicas a la Medida de tu Empresa
           </p>
@@ -22,11 +22,11 @@ const AboutSection = () => {
           <Image
             src="/services_1.jpg"
             alt="sevice_1"
-            className="w-full shadow-xl rounded-xl"
+            className="shadow-xl rounded-xl 2xl:w-[600px]"
             height={300}
             width={500}
           />
-          <div className="h-[250px] w-[500px] shadow-xl rounded-xl flex flex-col items-center justify-between p-5 absolute -bottom-14 -left-12 bg-white gap-2">
+          <div className="w-[500px] shadow-xl rounded-xl flex flex-col items-center justify-between p-5 absolute -bottom-14 -left-12 bg-white gap-2">
             <Image
               src="/card_icon.svg"
               alt="card_icon"

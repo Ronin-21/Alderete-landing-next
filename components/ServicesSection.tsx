@@ -2,7 +2,10 @@ import Image from "next/image";
 
 const ServicesSection = () => {
   return (
-    <div className="h-[800px] flex items-center justify-center" id="services">
+    <div
+      className="min-h-[800px] flex items-center justify-center"
+      id="services"
+    >
       <div className="container flex flex-col items-center gap-14">
         <div className="flex flex-col items-center justify-center max-w-[600px] text-center gap-5">
           <p className="text-5xl font-semibold text-primary font-title">
@@ -15,7 +18,7 @@ const ServicesSection = () => {
             infraestructura tecnológica para impulsar tu negocio.
           </p>
         </div>
-        <div className="flex items-center gap-10 justify-evenly">
+        <div className="flex flex-col xl:flex-row items-center gap-10 justify-evenly">
           <div className="h-[400px] w-[330px] shadow-xl rounded-xl bg-white flex flex-col items-center justify-evenly p-6">
             <Image src="/laptop.svg" alt="services" width={100} height={56} />
             <p className="text-xl font-semibold text-primary-dark">

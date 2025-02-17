@@ -29,7 +29,8 @@ const Navbar = () => {
         <Link href={"/"} className="flex items-center">
           <Image src="/logo_white.png" alt="logo" width={150} height={64} />
         </Link>
-        <div className="relative flex items-center h-full gap-10 justify-evenly">
+        {/* Menu desktop */}
+        <div className="hidden relative xl:flex items-center h-full gap-10 justify-evenly">
           <button onClick={() => scrollToTop()}>Inicio</button>
           <button
             className="flex items-center h-full gap-1 cursor-pointer"
@@ -59,59 +60,59 @@ const Navbar = () => {
           >
             Contacto
           </button>
-        </div>
-        <div
-          onMouseEnter={() => {
-            setOpen(true);
-          }}
-          onMouseLeave={() => {
-            setOpen(false);
-          }}
-          className={`absolute top-full left-0 translate-x-1/2 px-7 py-5 bg-white rounded-b-lg gap-2 items-center justify-evenly shadow-lg w-[900px] h-48 transition-all ${
-            open ? "flex" : "hidden"
-          }`}
-        >
-          <Link href="/sistemas/flexxus">
-            <Image
-              src="/logo_flexxus.png"
-              alt="logo flexxus"
-              height={40}
-              width={100}
-            />
-          </Link>
-          <Link href="/sistemas/fudo">
-            <Image
-              src="/logo_fudo.svg"
-              alt="logo fudo"
-              height={32}
-              width={100}
-            />
-          </Link>
-          <Link href="/sistemas/alegra">
-            <Image
-              src="/logo_alegra.webp"
-              alt="logo alegra"
-              height={40}
-              width={100}
-            />
-          </Link>
-          <Link href="/sistemas/wubook">
-            <Image
-              src="/logo_wubook.png"
-              alt="logo wubook"
-              className="invert h-12"
-              height={40}
-              width={100}
-            />
-          </Link>
-          <Link href="/sistemas/facil-virtual">
-            <Image
-              src="/logo_facil-virtual.png"
-              alt="logo facil"
-              height={40}
-              width={100}
-            />
-          </Link>
+          <div
+            onMouseEnter={() => {
+              setOpen(true);
+            }}
+            onMouseLeave={() => {
+              setOpen(false);
+            }}
+            className={`absolute top-full left-0 px-5 bg-white rounded-b-lg gap-5 items-center justify-evenly shadow-lg h-40 xl:w-[900px] transition-all ${
+              open ? "flex" : "hidden"
+            }`}
+          >
+            <Link href="/sistemas/flexxus">
+              <Image
+                src="/logo_flexxus.png"
+                alt="logo flexxus"
+                height={40}
+                width={150}
+              />
+            </Link>
+            <Link href="/sistemas/fudo">
+              <Image
+                src="/logo_fudo.svg"
+                alt="logo fudo"
+                height={32}
+                width={120}
+              />
+            </Link>
+            <Link href="/sistemas/alegra">
+              <Image
+                src="/logo_alegra.webp"
+                alt="logo alegra"
+                height={40}
+                width={150}
+              />
+            </Link>
+            <Link href="/sistemas/wubook">
+              <Image
+                src="/logo_wubook.png"
+                alt="logo wubook"
+                className="invert h-12"
+                height={40}
+                width={180}
+              />
+            </Link>
+            <Link href="/sistemas/facil-virtual">
+              <Image
+                src="/logo_facil-virtual.png"
+                alt="logo facil"
+                height={40}
+                width={140}
+              />
+            </Link>
+          </div>
         </div>
         <Link
           href={"https://alderete-informatica.odoo.com/web/login"}

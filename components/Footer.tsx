@@ -55,7 +55,7 @@ const Footer = () => {
             <p className="text-xl font-semibold text-primary">
               Agenda una demo
             </p>
-            <p className="text-sm text-gray-400 max-w-[250px]">
+            <p className="text-sm max-w-[250px]">
               Descubre cómo podemos optimizar tu infraestructura tecnológica.
               Contáctanos para una consulta personalizada.
             </p>
@@ -77,7 +77,7 @@ const Footer = () => {
         <div className="w-full mt-6 border-b border-primary-dark/50"></div>
         <p className="text-sm text-gray-500">
           © 2025 Alderete Informática y Soporte. Todos los derechos reservados.{" "}
-          <a href="#" className="text-primary hover:underline">
+          <a href="#" className="text-primary hover:underline font-semibold">
             Política de Privacidad
           </a>
         </p>

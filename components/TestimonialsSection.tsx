@@ -2,12 +2,12 @@ import Image from "next/image";
 
 const TestimonialsSection = () => {
   return (
-    <div className="bg-gray-100 h-[700px] flex items-center justify-center">
+    <div className="min-h-[700px] flex items-center justify-center">
       <div className="container flex flex-col items-center justify-center gap-20">
-        <h4 className="text-5xl font-medium text-primary font-title">
+        <p className="text-5xl font-medium text-primary font-title text-center">
           Lo que nuestros clientes dicen de nosotros
-        </h4>
-        <div className="flex items-start justify-center w-full gap-10 text-black">
+        </p>
+        <div className="flex flex-col xl:flex-row items-center xl:items-start justify-center w-full gap-10 text-black">
           <div className="flex flex-col items-center gap-10 p-4 bg-transparent justify-evenly w-80">
             <Image
               src="/user_1.jpg"

@@ -3,7 +3,11 @@ import Marquee from "react-fast-marquee";
 
 const Banner = () => {
   return (
-    <Marquee className="h-[200px]" pauseOnHover={true} autoFill={true}>
+    <Marquee
+      className="xl:h-[200px] h-[120px] gap-5"
+      pauseOnHover={true}
+      autoFill={true}
+    >
       <Image
         src="/logo_flexxus.png"
         alt="logo_flexxus"

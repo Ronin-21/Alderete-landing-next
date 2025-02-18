@@ -31,10 +31,10 @@ const MidBanner = () => {
   return (
     <div className="h-[1200px] xl:h-[600px] bg-cover bg-center bg-[url('/banner_1.jpg')] relative">
       <div className="absolute inset-0 flex flex-col items-center justify-center gap-16 bg-opacity-80 bg-primary-dark">
-        <p className="text-5xl font-semibold text-white text-center">
+        <p className="xl:text-5xl text-4xl font-semibold text-white text-center">
           Por qué elegir nuestros servicios
         </p>
-        <div className="flex flex-col xl:flex-row items-center justify-evenly 2xl:justify-center 2xl:gap-20 w-full">
+        <div className="flex flex-col xl:flex-row items-center justify-evenly 2xl:justify-center 2xl:gap-20 gap-10 w-full">
           {cards.map((card, index) => {
             return (
               <div

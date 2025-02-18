@@ -3,15 +3,15 @@ import Image from "next/image";
 const ServicesSection = () => {
   return (
     <div
-      className="min-h-[800px] flex items-center justify-center"
+      className="min-h-[800px] flex items-center justify-center my-10 px-5"
       id="services"
     >
       <div className="container flex flex-col items-center gap-14">
         <div className="flex flex-col items-center justify-center max-w-[600px] text-center gap-5">
-          <p className="text-5xl font-semibold text-primary font-title">
+          <p className="xl:text-5xl text-4xl font-semibold text-primary font-title">
             Nuestros Servicios
           </p>
-          <p className="text-lg text-secondary">
+          <p className="xl:text-lg text-base text-secondary">
             Ofrecemos soluciones tecnológicas personalizadas para tu empresa.
             Desde la implementación de software de terceros hasta el
             mantenimiento continuo de sistemas, nuestro objetivo es optimizar tu

@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <div className="py-10 mt-10">
       <div className="container flex flex-col items-center justify-center h-full gap-4 mx-auto">
-        <div className="flex items-center justify-around w-full">
+        <div className="flex flex-col xl:flex-row items-center justify-around w-full gap-10">
           <div className="flex flex-col items-start gap-4">
             <p className="text-sm font-medium text-gray-600 max-w-60">
               En{" "}
@@ -75,7 +75,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="w-full mt-6 border-b border-primary-dark/50"></div>
-        <p className="text-sm text-gray-500">
+        <p className="text-sm text-gray-500 text-center">
           © 2025 Alderete Informática y Soporte. Todos los derechos reservados.{" "}
           <a href="#" className="text-primary hover:underline font-semibold">
             Política de Privacidad

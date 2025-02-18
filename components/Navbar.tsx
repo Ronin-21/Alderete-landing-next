@@ -24,7 +24,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="fixed z-20 flex items-center justify-center w-full text-lg shadow-xl bg-primary">
+    <nav className="fixed z-20 flex items-center justify-center w-full text-lg shadow-xl bg-primary px-5">
       <div className="container relative flex items-center justify-between h-20 text-white">
         <Link href={"/"} className="flex items-center">
           <Image src="/logo_white.png" alt="logo" width={150} height={64} />

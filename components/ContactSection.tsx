@@ -45,12 +45,12 @@ const ContactSection = () => {
 
   return (
     <div
-      className="min-h-[800px] bg-cover bg-center bg-[url('/contact_bg.jpg')] relative"
+      className="xl:h-[800px] h-[1200px] bg-cover bg-center bg-[url('/contact_bg.jpg')] relative"
       id="contact"
     >
       <div className="absolute inset-0 flex flex-col items-center justify-center gap-16 bg-opacity-50 shadow-xl bg-primary-dark">
-        <div className="flex flex-col xl:flex-row items-center justify-center 2xl:w-2/3 xl:w-3/4 h-[600px] border border-white/40">
-          <div className="flex items-center justify-center w-2/3 h-full p-20 bg-gradient-to-b from-primary to-transparent backdrop-blur-md">
+        <div className="flex flex-col xl:flex-row items-center justify-center 2xl:w-2/3 xl:w-3/4 w-full h-[600px] border border-white/40">
+          <div className="flex items-center justify-center xl:w-2/3 w-full h-full xl:p-20 p-5 bg-gradient-to-b from-primary to-transparent backdrop-blur-md">
             <div className="flex flex-col items-start justify-center w-full h-full gap-6">
               <p className="font-medium text-white uppercase font-title">
                 Contact us
@@ -109,7 +109,7 @@ const ContactSection = () => {
               </form>
             </div>
           </div>
-          <div className="flex items-center justify-center w-1/3 h-full 2xl:px-10 xl:px-5 py-14 bg-gradient-to-b from-white to-transparent backdrop-blur-md">
+          <div className="flex items-center justify-center xl:w-1/3 w-full h-full 2xl:px-10 px-5 py-14 bg-gradient-to-b from-white to-transparent backdrop-blur-md">
             <div className="flex flex-col items-start justify-start w-full h-full gap-10">
               <p className="text-3xl font-semibold font-title">Contácto</p>
               <div className="flex flex-col gap-8 w-full">

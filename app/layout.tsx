@@ -1,8 +1,10 @@
+import Footer from "@/components/Footer";
+import Navbar from "@/components/Navbar";
+import ClientSideToastContainer from "@/components/ToastContainer";
+import { Analytics } from "@vercel/analytics/react";
 import type { Metadata } from "next";
 import { Exo_2, Lato } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
 
 const fontExo = Exo_2({
   variable: "--font-exo",
@@ -22,7 +24,8 @@ export const metadata: Metadata = {
     default: "Alderete Informática",
     template: "%s - Alderete Informática",
   },
-  description: "Servico de Soporte de Software personalizado",
+  description:
+    "Expertos en implementación y mantenimiento de software para tu negocio. Confía en nosotros para un soporte confiable y profesional.",
   twitter: {
     card: "summary_large_image",
   },
@@ -36,9 +39,11 @@ export default function RootLayout({
   return (
     <html lang="es">
       <body className={`${fontExo.variable} ${fontLato.variable} antialiased`}>
+        <ClientSideToastContainer />
         <Navbar />
         {children}
         <Footer />
+        <Analytics />
       </body>
     </html>
   );

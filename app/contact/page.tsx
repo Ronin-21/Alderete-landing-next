@@ -14,7 +14,7 @@ type FormData = {
   comment: string;
 };
 
-const ContactSection = () => {
+const ContactPage = () => {
   const { register, handleSubmit, reset } = useForm<FormData>();
   const [isLoading, setIsLoading] = useState(false);
 
@@ -185,4 +185,4 @@ const ContactSection = () => {
   );
 };
 
-export default ContactSection;
+export default ContactPage;

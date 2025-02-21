@@ -1,16 +1,12 @@
-"use client";
-
+import VideoPlayer from "@/components/VideoPlayer";
+import { Metadata } from "next";
 import Image from "next/image";
-import { useEffect, useState } from "react";
-import ReactPlayer from "react-player";
+
+export const metadata: Metadata = {
+  title: "Facil Virtual",
+};
 
 const FacilVirtual = () => {
-  const [isClient, setIsClient] = useState(false);
-
-  useEffect(() => {
-    setIsClient(true); // Cambia a true después de que el cliente haya renderizado
-  }, []);
-
   return (
     <div className="flex items-center justify-center pb-40 bg-gray-100 pt-60">
       <div className="container flex flex-col items-center justify-center gap-40">
@@ -61,14 +57,7 @@ const FacilVirtual = () => {
             facilita su adopción y uso diario, incluso para aquellos sin
             experiencia previa en sistemas de gestión.
           </p>
-          {isClient && (
-            <ReactPlayer
-              url={"https://www.youtube.com/watch?v=yqtASWk4i08"}
-              playing={false}
-              width="1080px"
-              height="720px"
-            />
-          )}
+          <VideoPlayer videoUrl="https://www.youtube.com/watch?v=yqtASWk4i08" />
         </div>
       </div>
     </div>

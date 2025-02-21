@@ -4,7 +4,7 @@ const TestimonialsSection = () => {
   return (
     <div className="min-h-[700px] flex items-center justify-center my-10">
       <div className="container flex flex-col items-center justify-center gap-20">
-        <p className="text-5xl font-medium text-primary font-title text-center">
+        <p className="xl:text-5xl text-4xl font-semibold text-primary font-title text-center">
           Lo que nuestros clientes dicen de nosotros
         </p>
         <div className="flex flex-col xl:flex-row items-center xl:items-start justify-center w-full gap-10 text-black">

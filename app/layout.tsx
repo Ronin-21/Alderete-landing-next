@@ -18,8 +18,14 @@ const fontLato = Lato({
 });
 
 export const metadata: Metadata = {
-  title: "Alderete Informática",
+  title: {
+    default: "Alderete Informática",
+    template: "%s - Alderete Informática",
+  },
   description: "Servico de Soporte de Software personalizado",
+  twitter: {
+    card: "summary_large_image",
+  },
 };
 
 export default function RootLayout({

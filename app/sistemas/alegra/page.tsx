@@ -1,15 +1,12 @@
-"use client";
-
+import VideoPlayer from "@/components/VideoPlayer";
+import { Metadata } from "next";
 import Image from "next/image";
-import { useEffect, useState } from "react";
-import ReactPlayer from "react-player";
+
+export const metadata: Metadata = {
+  title: "Alegra",
+};
 
 const Alegra = () => {
-  const [isClient, setIsClient] = useState(false);
-
-  useEffect(() => {
-    setIsClient(true); // Cambia a true después de que el cliente haya renderizado
-  }, []);
   return (
     <div className="flex items-center justify-center pb-40 bg-gray-100 pt-60">
       <div className="container flex flex-col items-center justify-center gap-40">
@@ -18,7 +15,7 @@ const Alegra = () => {
             <div>
               <Image
                 src="/logo_alegra.webp"
-                alt="flexxus logo"
+                alt="alegra logo"
                 className="h-20 mb-3"
                 width={200}
                 height={100}
@@ -59,15 +56,7 @@ const Alegra = () => {
             gestioná tu stock y mirá reportes de ventas de forma ágil y
             sencilla.
           </p>
-          {/* Solo renderiza ReactPlayer en el cliente */}
-          {isClient && (
-            <ReactPlayer
-              url={"https://youtu.be/I30x85vYXLU?si=pActmta_GAeoYPob"}
-              playing={false}
-              width="1080px"
-              height="720px"
-            />
-          )}
+          <VideoPlayer videoUrl="https://youtu.be/I30x85vYXLU?si=pActmta_GAeoYPob" />
         </div>
       </div>
     </div>

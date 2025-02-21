@@ -1,16 +1,12 @@
-"use client";
-
+import VideoPlayer from "@/components/VideoPlayer";
+import { Metadata } from "next";
 import Image from "next/image";
-import { useEffect, useState } from "react";
-import ReactPlayer from "react-player/youtube";
+
+export const metadata: Metadata = {
+  title: "Flexxus",
+};
 
 const Flexxus = () => {
-  const [isClient, setIsClient] = useState(false);
-
-  useEffect(() => {
-    setIsClient(true); // Cambia a true después de que el cliente haya renderizado
-  }, []);
-
   return (
     <div className="flex items-center justify-center pb-40 bg-gray-100 pt-60">
       <div className="container flex flex-col items-center justify-center gap-40">
@@ -60,15 +56,7 @@ const Flexxus = () => {
             de Gestión ERP debe ser su simpleza y facilidad de uso, y este es
             nuestro principal logro.
           </p>
-          {/* Solo renderiza ReactPlayer en el cliente */}
-          {isClient && (
-            <ReactPlayer
-              url={"https://www.youtube.com/watch?v=iadZRRdow4U"}
-              playing={false}
-              width="1080px"
-              height="720px"
-            />
-          )}
+          <VideoPlayer videoUrl="https://www.youtube.com/watch?v=iadZRRdow4U" />
         </div>
       </div>
     </div>

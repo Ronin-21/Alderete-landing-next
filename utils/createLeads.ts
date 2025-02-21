@@ -1,9 +1,7 @@
 import axios from "axios";
 
-const db = "alderete-informatica";
-//const username = "ale_lasarte@hotmail.com";
-//const apiKey = "4976ff2229eddca2ef987f151a6336e7165265d1";
-const apiKey = "5ddaeb40aecf9d279bb1cd528c7a374a5decb497"; // Alderete Informática
+const db = process.env.ODOO_DB_NAME;
+const apiKey = process.env.ODOO_API_KEY;
 
 export interface Leads {
   name: string;

@@ -1,16 +1,12 @@
-"use client";
-
+import VideoPlayer from "@/components/VideoPlayer";
+import { Metadata } from "next";
 import Image from "next/image";
-import { useEffect, useState } from "react";
-import ReactPlayer from "react-player";
+
+export const metadata: Metadata = {
+  title: "Fudo",
+};
 
 const Fudo = () => {
-  const [isClient, setIsClient] = useState(false);
-
-  useEffect(() => {
-    setIsClient(true); // Cambia a true después de que el cliente haya renderizado
-  }, []);
-
   return (
     <div className="flex items-center justify-center pb-40 bg-gray-100 pt-60">
       <div className="container flex flex-col items-center justify-center gap-40">
@@ -59,15 +55,7 @@ const Fudo = () => {
             Tomá órdenes, emití comandas y cerrá ventas, evitando los errores
             del lápiz y el papel también con nuestra aplicación móvil.
           </p>
-          {/* Solo renderiza ReactPlayer en el cliente */}
-          {isClient && (
-            <ReactPlayer
-              url={"https://www.youtube.com/watch?v=SHKl3-SQHD8&t=4s"}
-              playing={false}
-              width="1080px"
-              height="720px"
-            />
-          )}
+          <VideoPlayer videoUrl="https://www.youtube.com/watch?v=SHKl3-SQHD8&t=4s" />
         </div>
       </div>
     </div>

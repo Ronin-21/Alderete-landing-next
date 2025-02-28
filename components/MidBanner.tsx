@@ -5,13 +5,13 @@ const cards = [
     src: "/engine.svg",
     title: "Soluciones Personalizadas",
     content:
-      "Creamos soluciones tecnológicas adaptadas a las necesidades específicas de tu empresa, garantizando una integración eficiente y sin complicaciones.",
+      "Ofrecemos soluciones tecnológicas adaptadas a las necesidades específicas de tu empresa, garantizando una integración eficiente y sin complicaciones.",
   },
   {
     src: "/headset.svg",
     title: "Soporte Técnico Continuo",
     content:
-      "Nuestro equipo está disponible 24/7 para solucionar cualquier inconveniente y asegurarse de que tu infraestructura tecnológica esté siempre funcionando al máximo.",
+      "Nuestro equipo está disponible para solucionar cualquier inconveniente y asegurarse de que tu infraestructura tecnológica esté siempre funcionando al máximo.",
   },
   {
     src: "/lock.svg",
@@ -24,6 +24,12 @@ const cards = [
     title: "Optimización del Rendimiento",
     content:
       "Mejoramos la eficiencia de tus sistemas y procesos, optimizando los recursos y maximizando la productividad de tu empresa con soluciones inteligentes.",
+  },
+  {
+    src: "/chart-line-arrow.svg",
+    title: "Consultoría para Empresas",
+    content:
+      "Brindamos asesoramiento a pequeñas y medianas empresas en administración interna comercial, gestión de costos, compras y ventas para minimizar impuestos. Evaluamos problemas, desarrollamos estrategias y colaboramos en su implementación.",
   },
 ];
 

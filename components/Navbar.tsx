@@ -112,6 +112,14 @@ const Navbar = () => {
                 width={140}
               />
             </Link>
+            <Link href="/sistemas/odoo">
+              <Image
+                src="/logo_odoo.png"
+                alt="logo odoo"
+                height={40}
+                width={140}
+              />
+            </Link>
           </div>
         </div>
         <Link

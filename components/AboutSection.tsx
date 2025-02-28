@@ -9,11 +9,27 @@ const AboutSection = () => {
             Soluciones Tecnológicas a la Medida de tu Empresa
           </p>
           <p className="text-secondary">
+            En{" "}
+            <span className="font-bold text-primary-dark">
+              Alderete Informatica & Soporte
+            </span>{" "}
+            nos enfocamos en brindar un servicio integral y personalizado,
+            adaptándonos a las necesidades específicas de cada cliente para
+            garantizar una implementación fluida y efectiva. Con un equipo
+            altamente capacitado y un enfoque basado en la eficiencia y la
+            automatización, ayudamos a las empresas a mejorar su productividad,
+            reducir costos y maximizar su rentabilidad. Nuestra misión es
+            potenciar la transformación digital de los negocios, proporcionando
+            tecnología avanzada, software de calidad y soporte personalizado y
+            continuo para asegurar un crecimiento sostenido en un entorno cada
+            vez más competitivo.
+          </p>
+          {/* <p className="text-secondary">
             En Alderete Informática y Soporte, nos especializamos en la
             implementación, mantenimiento y soporte de soluciones tecnológicas.
             Nuestro enfoque está orientado a ofrecerte el respaldo necesario
             para que tu empresa pueda seguir creciendo con la máxima eficiencia.
-          </p>
+          </p> */}
           <button className="py-3 font-semibold transition-all duration-200 ease-out shadow-2xl text-primary-dark bg-accent px-7 rounded-xl hover:bg-primary hover:text-white">
             Contáctanos
           </button>

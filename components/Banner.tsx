@@ -31,9 +31,10 @@ const Banner = () => {
         src="/logo_wubook.png"
         alt="logo_wubook"
         className="invert"
-        width={250}
+        width={200}
         height={48}
       />
+      <Image src="/logo_odoo.png" alt="logo_odoo" width={200} height={30} />
     </Marquee>
   );
 };

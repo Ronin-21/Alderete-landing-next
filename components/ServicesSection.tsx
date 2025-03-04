@@ -1,5 +1,68 @@
 import Image from "next/image";
 
+const cards = [
+  {
+    src: "/engine.svg",
+    title: "Montaje de Infraestructura Informática",
+    content:
+      "Diseñamos e implementamos la infraestructura tecnológica necesaria para tu empresa, garantizando un funcionamiento óptimo y seguro de tus sistemas.",
+  },
+  {
+    src: "/engine.svg",
+    title: "Implementación de Software",
+    content:
+      "Nos encargamos de configurar soluciones de software adaptadas a tus necesidades empresariales.",
+  },
+  {
+    src: "/engine.svg",
+    title: "Mantenimiento de Sistemas",
+    content:
+      "Ofrecemos servicios de mantenimiento preventivo y correctivo para tus sistemas.",
+  },
+  {
+    src: "/engine.svg",
+    title: "Configuración y Soporte Técnico",
+    content:
+      "Brindamos soporte continuo para garantizar el correcto funcionamiento de los sistemas y resolver cualquier inconveniente en el menor tiempo posible.",
+  },
+  {
+    src: "/engine.svg",
+    title: "Capacitación para Usuarios",
+    content:
+      "Capacitamos a los equipos de trabajo para que aprovechen al máximo las herramientas implementadas, mejorando su eficiencia y productividad.",
+  },
+  {
+    src: "/engine.svg",
+    title: "Automatización de Procesos",
+    content:
+      "Diseñamos soluciones que permiten automatizar flujos de trabajo, reduciendo tiempos operativos y minimizando errores en la gestión.",
+  },
+  {
+    src: "/engine.svg",
+    title: "Asesoramiento Personalizado",
+    content:
+      "Nuestras soluciones están diseñadas para crecer junto con su empresa, permitiendo incorporar nuevas funcionalidades según sus requerimientos.",
+  },
+  {
+    src: "/engine.svg",
+    title: "Recuperación de Datos",
+    content:
+      "Contamos con herramientas especializadas para recuperar información en caso de pérdida de datos, garantizando la continuidad de sus operaciones.",
+  },
+  {
+    src: "/engine.svg",
+    title: "Service y Actualización de Hardware",
+    content:
+      "Ofrecemos servicios de mantenimiento preventivo y correctivo para tus sistemas.",
+  },
+  {
+    src: "/engine.svg",
+    title: "Diseño de Páginas Web",
+    content:
+      "Diseñamos y desarrollamos sitios web a medida, adaptados a las necesidades de tu empresa y optimizados para mejorar la experiencia de usuario.",
+  },
+];
+
 const ServicesSection = () => {
   return (
     <div
@@ -18,57 +81,26 @@ const ServicesSection = () => {
             infraestructura tecnológica para impulsar tu negocio.
           </p>
         </div>
-        <div className="flex flex-col xl:flex-row items-center gap-10 justify-evenly">
-          <div className="h-[400px] w-[330px] shadow-xl rounded-xl bg-white flex flex-col items-center justify-evenly p-6">
-            <Image src="/laptop.svg" alt="services" width={100} height={56} />
-            <p className="text-xl font-semibold text-primary-dark">
-              Implementación de Software
-            </p>
-            <p className="text-sm text-center text-secondary">
-              Nos encargamos de implementar soluciones de software adaptadas a
-              tus necesidades empresariales. Aseguramos una integración
-              eficiente con tus sistemas actuales para mejorar los procesos de
-              tu negocio.
-            </p>
-            <button className="py-3 font-semibold transition-all duration-200 ease-out shadow-2xl text-primary-dark bg-accent px-7 rounded-3xl hover:bg-primary hover:text-white">
-              Solicita una Cotización
-            </button>
-          </div>
-          <div className="h-[400px] w-[330px] shadow-xl rounded-xl flex flex-col items-center justify-evenly p-6 bg-white">
-            <Image
-              src="/settings-hammer.svg"
-              alt="services"
-              width={100}
-              height={56}
-            />
-            <p className="text-xl font-semibold text-primary-dark">
-              Mantenimiento de Sistemas
-            </p>
-            <p className="text-sm text-center text-secondary">
-              Ofrecemos servicios de mantenimiento preventivo y correctivo para
-              tus sistemas. Nos aseguramos de que todo funcione sin
-              interrupciones, minimizando tiempos de inactividad y maximizando
-              la eficiencia operativa.
-            </p>
-            <button className="py-3 font-semibold transition-all duration-200 ease-out shadow-2xl text-primary-dark bg-accent px-7 rounded-3xl hover:bg-primary hover:text-white">
-              Solicita una Cotización
-            </button>
-          </div>
-          <div className="h-[400px] w-[330px] shadow-xl rounded-xl flex flex-col items-center justify-evenly p-6 bg-white">
-            <Image src="/chat.svg" alt="services" width={100} height={56} />
-            <p className="text-xl font-semibold text-primary-dark">
-              Soporte Técnico Continuo
-            </p>
-            <p className="text-sm text-center text-secondary">
-              Proporcionamos soporte técnico continuo para garantizar el
-              funcionamiento estable de tus sistemas. Nuestro equipo está
-              siempre disponible para resolver cualquier incidencia y optimizar
-              tu infraestructura tecnológica.
-            </p>
-            <button className="py-3 font-semibold transition-all duration-200 ease-out shadow-2xl text-primary-dark bg-accent px-7 rounded-3xl hover:bg-primary hover:text-white">
-              Solicita una Cotización
-            </button>
-          </div>
+        <div className="flex flex-col xl:flex-row items-center gap-10 justify-evenly xl:flex-wrap xl:max-w-[1200px]">
+          {cards.map((card, index) => {
+            return (
+              <div
+                key={index}
+                className="h-[350px] w-[330px] shadow-xl rounded-xl bg-white flex flex-col items-center justify-start gap-5 py-10 px-5 text-center"
+              >
+                <Image
+                  src="/laptop.svg"
+                  alt="services"
+                  width={100}
+                  height={56}
+                />
+                <p className="text-xl font-semibold text-primary-dark">
+                  {card.title}
+                </p>
+                <p className="text-sm text-secondary">{card.content}</p>
+              </div>
+            );
+          })}
         </div>
       </div>
     </div>

@@ -22,7 +22,7 @@ const Banner = () => {
       />
       <Image src="/logo_fudo.svg" alt="logo_fudo" width={150} height={48} />
       <Image
-        src="/logo_facil-virtual.png"
+        src="/logo_facil-virtual.svg"
         alt="logo_facil-virtual"
         width={200}
         height={56}

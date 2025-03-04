@@ -1,6 +1,18 @@
+"use client";
 import Image from "next/image";
 
 const AboutSection = () => {
+  // Función para desplazarse a una sección
+  const scrollToSection = (id: string) => {
+    if (typeof window !== "undefined") {
+      // Asegura que se ejecuta en el cliente
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  };
+
   return (
     <div className="pt-24 pb-32 px-5 bg-background" id="about">
       <div className="container flex flex-col xl:flex-row items-center justify-around mx-auto gap-20">
@@ -30,7 +42,10 @@ const AboutSection = () => {
             Nuestro enfoque está orientado a ofrecerte el respaldo necesario
             para que tu empresa pueda seguir creciendo con la máxima eficiencia.
           </p> */}
-          <button className="py-3 font-semibold transition-all duration-200 ease-out shadow-2xl text-primary-dark bg-accent px-7 rounded-xl hover:bg-primary hover:text-white">
+          <button
+            className="py-3 font-semibold transition-all duration-200 ease-out shadow-2xl text-primary-dark bg-accent px-7 rounded-xl hover:bg-primary hover:text-white"
+            onClick={() => scrollToSection("contact")}
+          >
             Contáctanos
           </button>
         </div>

@@ -106,7 +106,7 @@ const Navbar = () => {
             </Link>
             <Link href="/sistemas/facil-virtual">
               <Image
-                src="/logo_facil-virtual.png"
+                src="/logo_facil-virtual.svg"
                 alt="logo facil"
                 height={40}
                 width={140}

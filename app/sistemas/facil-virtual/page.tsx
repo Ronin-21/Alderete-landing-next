@@ -14,7 +14,7 @@ const FacilVirtual = () => {
           <div className="flex flex-col items-start justify-center gap-10">
             <div>
               <Image
-                src="/logo_facil-virtual.png"
+                src="/logo_facil-virtual.svg"
                 alt="flexxus logo"
                 className="h-20"
                 width={200}
@@ -41,7 +41,7 @@ const FacilVirtual = () => {
             </button>
           </div>
           <Image
-            src="/logo_facil-virtual.png"
+            src="/logo_facil-virtual.svg"
             alt="portada"
             className="max-w-3xl"
             width={768}

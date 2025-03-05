@@ -67,7 +67,7 @@ const Navbar = () => {
             onMouseLeave={() => {
               setOpen(false);
             }}
-            className={`absolute top-full left-0 px-5 bg-white rounded-b-lg gap-5 items-center justify-evenly shadow-lg h-40 xl:w-[900px] transition-all ${
+            className={`absolute top-full left-0 px-5 bg-white rounded-b-lg gap-5 items-center justify-evenly shadow-lg h-40 xl:w-[950px] transition-all ${
               open ? "flex" : "hidden"
             }`}
           >
@@ -77,6 +77,23 @@ const Navbar = () => {
                 alt="logo flexxus"
                 height={40}
                 width={150}
+              />
+            </Link>
+            <Link href="/sistemas/odoo">
+              <Image
+                src="/logo_odoo.png"
+                alt="logo odoo"
+                height={40}
+                width={140}
+              />
+            </Link>
+            <Link href="/sistemas/wubook">
+              <Image
+                src="/logo_wubook.png"
+                alt="logo wubook"
+                className="invert h-12"
+                height={40}
+                width={180}
               />
             </Link>
             <Link href="/sistemas/fudo">
@@ -95,29 +112,13 @@ const Navbar = () => {
                 width={150}
               />
             </Link>
-            <Link href="/sistemas/wubook">
-              <Image
-                src="/logo_wubook.png"
-                alt="logo wubook"
-                className="invert h-12"
-                height={40}
-                width={180}
-              />
-            </Link>
+
             <Link href="/sistemas/facil-virtual">
               <Image
                 src="/logo_facil-virtual.svg"
                 alt="logo facil"
-                height={40}
-                width={140}
-              />
-            </Link>
-            <Link href="/sistemas/odoo">
-              <Image
-                src="/logo_odoo.png"
-                alt="logo odoo"
-                height={40}
-                width={140}
+                height={50}
+                width={150}
               />
             </Link>
           </div>

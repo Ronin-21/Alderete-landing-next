@@ -14,19 +14,7 @@ const Banner = () => {
         width={200}
         height={56}
       />
-      <Image
-        src="/logo_alegra.webp"
-        alt="logo_alegra"
-        width={250}
-        height={56}
-      />
-      <Image src="/logo_fudo.svg" alt="logo_fudo" width={150} height={48} />
-      <Image
-        src="/logo_facil-virtual.svg"
-        alt="logo_facil-virtual"
-        width={200}
-        height={56}
-      />
+      <Image src="/logo_odoo.png" alt="logo_odoo" width={180} height={25} />
       <Image
         src="/logo_wubook.png"
         alt="logo_wubook"
@@ -34,7 +22,19 @@ const Banner = () => {
         width={200}
         height={48}
       />
-      <Image src="/logo_odoo.png" alt="logo_odoo" width={200} height={30} />
+      <Image src="/logo_fudo.svg" alt="logo_fudo" width={150} height={48} />
+      <Image
+        src="/logo_alegra.webp"
+        alt="logo_alegra"
+        width={250}
+        height={56}
+      />
+      <Image
+        src="/logo_facil-virtual.svg"
+        alt="logo_facil-virtual"
+        width={200}
+        height={56}
+      />
     </Marquee>
   );
 };

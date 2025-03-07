@@ -1,9 +1,11 @@
 "use client";
 
 import createLead from "@/utils/createLeads";
-import Image from "next/image";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
+import { FiMapPin, FiPhone } from "react-icons/fi";
+import { IoStorefrontOutline } from "react-icons/io5";
+import { MdOutlineMail } from "react-icons/md";
 import { Bounce, toast } from "react-toastify";
 
 type FormData = {
@@ -124,13 +126,9 @@ const ContactSection = () => {
               <p className="text-3xl font-semibold font-title">Información</p>
               <div className="flex flex-col gap-8 w-full">
                 <div className="flex items-center gap-6">
-                  <Image
-                    src="/map-pin-white.svg"
-                    alt=""
-                    className="p-3 rounded-full bg-primary"
-                    width={50}
-                    height={50}
-                  />
+                  <div className="w-14 h-14 rounded-full bg-primary flex items-center justify-center">
+                    <FiMapPin className="text-white text-3xl" />
+                  </div>
                   <div className="flex flex-col">
                     <p className="text-lg font-semibold">Dirección</p>
                     <p>Termas de Rio Hondo</p>
@@ -138,39 +136,27 @@ const ContactSection = () => {
                   </div>
                 </div>
                 <div className="flex items-center gap-6">
-                  <Image
-                    src="/phone-white.svg"
-                    alt=""
-                    className="p-3 rounded-full bg-primary"
-                    width={50}
-                    height={50}
-                  />
+                  <div className="w-14 h-14 rounded-full bg-primary flex items-center justify-center">
+                    <FiPhone className="text-white text-3xl" />
+                  </div>
                   <div className="flex flex-col">
                     <p className="text-lg font-semibold">Teléfonos</p>
                     <p>+54 9 3858 458253</p>
                   </div>
                 </div>
                 <div className="flex items-center gap-6">
-                  <Image
-                    src="/mail-white.svg"
-                    alt=""
-                    className="p-3 rounded-full bg-primary"
-                    width={50}
-                    height={50}
-                  />
+                  <div className="w-14 h-14 rounded-full bg-primary flex items-center justify-center">
+                    <MdOutlineMail className="text-white text-3xl" />
+                  </div>
                   <div className="flex flex-col">
                     <p className="text-lg font-semibold">Email</p>
                     <p>contacto@aldereteinformatica.com</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-6">
-                  <Image
-                    src="/building-store.svg"
-                    alt=""
-                    className="p-3 rounded-full bg-primary"
-                    width={50}
-                    height={50}
-                  />
+                  <div className="w-14 h-14 rounded-full bg-primary flex items-center justify-center">
+                    <IoStorefrontOutline className="text-white text-3xl" />
+                  </div>
                   <div className="flex flex-col">
                     <p className="text-lg font-semibold">
                       Horarios de Atención

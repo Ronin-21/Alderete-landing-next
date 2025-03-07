@@ -1,18 +1,8 @@
-"use client";
 import Image from "next/image";
+import Link from "next/link";
+import { FaLightbulb } from "react-icons/fa";
 
 const AboutSection = () => {
-  // Función para desplazarse a una sección
-  const scrollToSection = (id: string) => {
-    if (typeof window !== "undefined") {
-      // Asegura que se ejecuta en el cliente
-      const element = document.getElementById(id);
-      if (element) {
-        element.scrollIntoView({ behavior: "smooth" });
-      }
-    }
-  };
-
   return (
     <div className="pt-24 pb-32 px-5 bg-background" id="about">
       <div className="container flex flex-col xl:flex-row items-center justify-around mx-auto gap-20">
@@ -42,12 +32,12 @@ const AboutSection = () => {
             Nuestro enfoque está orientado a ofrecerte el respaldo necesario
             para que tu empresa pueda seguir creciendo con la máxima eficiencia.
           </p> */}
-          <button
+          <Link
+            href={"/contact"}
             className="py-3 font-semibold transition-all duration-200 ease-out shadow-2xl text-primary-dark bg-accent px-7 rounded-xl hover:bg-primary hover:text-white"
-            onClick={() => scrollToSection("contact")}
           >
             Contáctanos
-          </button>
+          </Link>
         </div>
         <div className="relative">
           <Image
@@ -58,12 +48,7 @@ const AboutSection = () => {
             width={500}
           />
           <div className="xl:w-[500px] w-full shadow-xl rounded-xl flex flex-col items-center justify-between p-5 xl:absolute xl:-bottom-14 xl:-left-12 bg-white gap-2">
-            <Image
-              src="/card_icon.svg"
-              alt="card_icon"
-              height={56}
-              width={56}
-            />
+            <FaLightbulb className="text-5xl text-primary-light" />
             <p className="text-xl font-semibold font-title text-primary-dark">
               Soporte Personalizado y Continuo
             </p>

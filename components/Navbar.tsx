@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
+import { IoIosArrowForward } from "react-icons/io";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -30,7 +31,7 @@ const Navbar = () => {
           <Image src="/logo_white.png" alt="logo" width={150} height={64} />
         </Link>
         {/* Menu desktop */}
-        <div className="hidden relative xl:flex items-center h-full gap-10 justify-evenly">
+        <div className="hidden relative xl:flex items-center h-full gap-10 justify-evenly text-xl">
           <button onClick={() => scrollToTop()}>Inicio</button>
           <button
             className="flex items-center h-full gap-1 cursor-pointer"
@@ -42,18 +43,16 @@ const Navbar = () => {
             }}
           >
             Soluciones
-            <Image
-              src="/down-arrow.svg"
-              alt="arrow"
-              className="w-6"
-              width={100}
-              height={24}
+            <IoIosArrowForward
+              className={`w-6 transition-all ease-out duration-300 ${
+                open ? "rotate-90" : ""
+              }`}
             />
           </button>
+          <button onClick={() => scrollToSection("services")}>Servicios</button>
           <button onClick={() => scrollToSection("about")}>
             Acerca de nosotros
           </button>
-          <button onClick={() => scrollToSection("services")}>Servicios</button>
           <button
             onClick={() => scrollToSection("contact")}
             className="cursor-pointer"
@@ -67,7 +66,7 @@ const Navbar = () => {
             onMouseLeave={() => {
               setOpen(false);
             }}
-            className={`absolute top-full left-0 px-5 bg-white rounded-b-lg gap-5 items-center justify-evenly shadow-lg h-40 xl:w-[950px] transition-all ${
+            className={`absolute top-full left-0 px-5 bg-white rounded-b-lg gap-5 items-center justify-evenly shadow-lg h-40 xl:w-[950px] transition-all ease-out duration-500 ${
               open ? "flex" : "hidden"
             }`}
           >
@@ -84,7 +83,7 @@ const Navbar = () => {
                 src="/logo_odoo.png"
                 alt="logo odoo"
                 height={40}
-                width={140}
+                width={130}
               />
             </Link>
             <Link href="/sistemas/wubook">
@@ -118,7 +117,7 @@ const Navbar = () => {
                 src="/logo_facil-virtual.svg"
                 alt="logo facil"
                 height={50}
-                width={150}
+                width={170}
               />
             </Link>
           </div>

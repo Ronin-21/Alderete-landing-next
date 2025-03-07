@@ -1,4 +1,3 @@
-import VideoPlayer from "@/components/VideoPlayer";
 import { Metadata } from "next";
 import Image from "next/image";
 
@@ -14,8 +13,8 @@ const FacilVirtual = () => {
           <div className="flex flex-col items-start justify-center gap-10">
             <div>
               <Image
-                src="/logo_facil-virtual.svg"
-                alt="flexxus logo"
+                src="/logo_facil-virtual.png"
+                alt="facil virtual logo"
                 className="h-20"
                 width={200}
                 height={100}
@@ -41,7 +40,7 @@ const FacilVirtual = () => {
             </button>
           </div>
           <Image
-            src="/logo_facil-virtual.svg"
+            src="/portada_facil-virtual.png"
             alt="portada"
             className="max-w-3xl"
             width={768}
@@ -57,7 +56,7 @@ const FacilVirtual = () => {
             facilita su adopción y uso diario, incluso para aquellos sin
             experiencia previa en sistemas de gestión.
           </p>
-          <VideoPlayer videoUrl="https://www.youtube.com/watch?v=yqtASWk4i08" />
+          {/* <VideoPlayer videoUrl="https://www.youtube.com/watch?v=yqtASWk4i08" /> */}
         </div>
       </div>
     </div>

@@ -5,6 +5,7 @@ import { Analytics } from "@vercel/analytics/react";
 import type { Metadata } from "next";
 import { Exo_2, Lato } from "next/font/google";
 import "./globals.css";
+import Script from "next/script";
 
 const fontExo = Exo_2({
   variable: "--font-exo",
@@ -38,6 +39,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es">
+      <head>
+        <Script
+          async
+          src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-${process.env.NEXT_PUBLIC_GOOGLEADS_CLIENT_ID}`}
+          crossOrigin="anonymous"
+          strategy="afterInteractive"
+        />
+      </head>
       <body className={`${fontExo.variable} ${fontLato.variable} antialiased`}>
         <ClientSideToastContainer />
         <Navbar />

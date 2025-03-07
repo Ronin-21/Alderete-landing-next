@@ -84,10 +84,10 @@ const ServicesSection = () => {
       className="min-h-[800px] flex items-center justify-center my-10 px-5"
       id="services"
     >
-      <div className="container flex flex-col items-center gap-14">
-        <div className="flex flex-col items-center justify-center max-w-[600px] text-center gap-5">
+      <div className="container flex flex-col items-center gap-16">
+        <div className="flex flex-col items-center justify-center max-w-[600px] text-center gap-7">
           <p className="xl:text-5xl text-4xl font-semibold text-primary font-title">
-            Nuestros Servicios
+            Nuestros <span className="ml-2">Servicios</span>
           </p>
           <p className="xl:text-lg text-base text-secondary">
             Ofrecemos soluciones tecnológicas personalizadas para tu empresa.

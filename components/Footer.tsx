@@ -1,4 +1,6 @@
 import Image from "next/image";
+import { FaFacebookF, FaTiktok, FaWhatsapp } from "react-icons/fa";
+import { RiInstagramFill } from "react-icons/ri";
 
 const Footer = () => {
   return (
@@ -17,32 +19,26 @@ const Footer = () => {
               tecnológicas.
             </p>
             <div className="flex items-center gap-4">
-              <a href="#" aria-label="Facebook" target="_blank">
-                <Image
-                  src="/brand-facebook.svg"
-                  alt="Facebook"
-                  className="p-1 rounded-md bg-primary-light hover:bg-primary"
-                  width={35}
-                  height={35}
-                />
+              <a
+                href="https://www.facebook.com/p/Alderete-Inform%C3%A1tica-Soporte-100088300417489/"
+                aria-label="Facebook"
+                target="_blank"
+              >
+                <FaFacebookF className="p-2 text-white text-4xl rounded-md bg-primary-light hover:bg-primary" />
               </a>
-              <a href="#" aria-label="Instagram" target="_blank">
-                <Image
-                  src="/brand-instagram.svg"
-                  alt="Instagram"
-                  className="p-1 rounded-md bg-primary-light hover:bg-primary"
-                  width={35}
-                  height={35}
-                />
+              <a
+                href="https://www.instagram.com/aldereteinformatica/"
+                aria-label="Instagram"
+                target="_blank"
+              >
+                <RiInstagramFill className="p-2 text-white text-4xl rounded-md bg-primary-light hover:bg-primary" />
               </a>
-              <a href="#" aria-label="TikTok" target="_blank">
-                <Image
-                  src="/brand-tiktok.svg"
-                  alt="TikTok"
-                  className="p-1 rounded-md bg-primary-light hover:bg-primary"
-                  width={35}
-                  height={35}
-                />
+              <a
+                href="https://www.tiktok.com/@alderete.informatica25"
+                aria-label="TikTok"
+                target="_blank"
+              >
+                <FaTiktok className="p-2 text-white text-4xl rounded-md bg-primary-light hover:bg-primary" />
               </a>
             </div>
           </div>
@@ -67,12 +63,7 @@ const Footer = () => {
               target="_blank"
               className="flex items-center justify-center gap-2 py-3 font-semibold transition-all duration-200 ease-out shadow-2xl text-primary-dark bg-accent px-7 rounded-xl hover:bg-primary hover:text-white"
             >
-              <Image
-                src="/brand-whatsapp.svg"
-                alt="Whatsapp"
-                width={30}
-                height={30}
-              />
+              <FaWhatsapp className="text-inherit text-2xl" />
               <p>Contáctanos</p>
             </a>
           </div>

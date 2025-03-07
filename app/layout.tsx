@@ -39,15 +39,22 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es">
-      <head>
+      <body className={`${fontExo.variable} ${fontLato.variable} antialiased`}>
+        {/* Google Ads Script */}
         <Script
           async
-          src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-${process.env.NEXT_PUBLIC_GOOGLEADS_CLIENT_ID}`}
-          crossOrigin="anonymous"
+          src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ADS_ID}`}
           strategy="afterInteractive"
         />
-      </head>
-      <body className={`${fontExo.variable} ${fontLato.variable} antialiased`}>
+
+        <Script id="google-ads" strategy="afterInteractive">
+          {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ADS_ID}');
+        `}
+        </Script>
         <ClientSideToastContainer />
         <Navbar />
         {children}

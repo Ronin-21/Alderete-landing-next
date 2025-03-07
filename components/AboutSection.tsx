@@ -33,7 +33,7 @@ const AboutSection = () => {
             para que tu empresa pueda seguir creciendo con la máxima eficiencia.
           </p> */}
           <Link
-            href={"/contact"}
+            href={"/contacto"}
             className="py-3 font-semibold transition-all duration-200 ease-out shadow-2xl text-primary-dark bg-accent px-7 rounded-xl hover:bg-primary hover:text-white"
           >
             Contáctanos

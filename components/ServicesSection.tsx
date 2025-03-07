@@ -102,7 +102,7 @@ const ServicesSection = () => {
             return (
               <div
                 key={index}
-                className="h-[350px] w-[330px] shadow-xl rounded-xl bg-white flex flex-col items-center justify-start gap-5 py-10 px-5 text-center border-t-2 border-primary-light"
+                className="h-[350px] w-[330px] shadow-xl rounded-xl bg-white flex flex-col items-center justify-start gap-5 py-10 px-5 text-center border-t-2 border-primary-light transition-all duration-500 ease-in-out hover:scale-110"
               >
                 <Icon className="w-16 h-16 text-accent" />
                 <p className="text-xl font-semibold text-primary-dark">

@@ -1,11 +1,11 @@
+import TitleFadeIn from "./TitleFadeIn";
+
 const Hero = () => {
   return (
     <div className="min-h-dvh bg-cover bg-center bg-[url('/hero_bg2.jpg')] relative">
       <div className="absolute inset-0 bg-gradient-to-r from-primary-dark to-transparent">
         <div className="container flex flex-col xl:items-start items-center xl:text-start text-center justify-center h-full gap-12 mx-auto text-white">
-          <h1 className="xl:text-6xl text-4xl font-bold font-title max-w-[800px]">
-            Soluciones Tecnológicas para Empresas Inteligentes
-          </h1>
+          <TitleFadeIn />
           <h2 className="max-w-[600px] xl:text-xl text-lg">
             Expertos en implementación y mantenimiento de software. Nos
             aseguramos que tu tecnología esté siempre lista para impulsar tu

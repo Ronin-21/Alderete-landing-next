@@ -6,6 +6,7 @@ import type { Metadata } from "next";
 import { Exo_2, Lato } from "next/font/google";
 import "./globals.css";
 import Script from "next/script";
+import WhatsappButton from "@/components/WhatsappButton";
 
 const fontExo = Exo_2({
   variable: "--font-exo",
@@ -58,6 +59,7 @@ export default function RootLayout({
         <ClientSideToastContainer />
         <Navbar />
         {children}
+        <WhatsappButton />
         <Footer />
         <Analytics />
       </body>

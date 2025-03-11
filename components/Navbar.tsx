@@ -28,8 +28,8 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="fixed z-20 flex items-center justify-center w-full text-lg shadow-xl bg-primary">
-      <div className="container relative flex items-center justify-between h-20 text-white px-5">
+    <nav className="fixed z-20 flex items-center justify-center w-full text-lg shadow-xl bg-primary h-20">
+      <div className="container relative flex items-center justify-between h-full text-white px-5">
         {/* Logo */}
         <Link href="/" className="flex items-center">
           <Image src="/logo_white.png" alt="logo" width={150} height={64} />
@@ -39,7 +39,7 @@ const Navbar = () => {
         <div className="hidden relative xl:flex items-center h-full gap-10 text-xl">
           <button onClick={scrollToTop}>Inicio</button>
           <button
-            className="flex items-center gap-1 cursor-pointer"
+            className="flex items-center gap-1 cursor-pointer h-full"
             onMouseEnter={() => setOpen(true)}
             onMouseLeave={() => setOpen(false)}
           >
@@ -59,7 +59,7 @@ const Navbar = () => {
           <div
             onMouseEnter={() => setOpen(true)}
             onMouseLeave={() => setOpen(false)}
-            className={`absolute top-full left-0 px-5 bg-white rounded-b-lg gap-5 items-center justify-evenly shadow-lg h-40 xl:w-[950px] transition-all duration-500 ${
+            className={`absolute top-full left-0 px-5 bg-white rounded-b-lg gap-5 items-center justify-evenly shadow-lg h-40 xl:w-[950px] transition-all duration-500 z-20 ${
               open ? "flex" : "hidden"
             }`}
           >

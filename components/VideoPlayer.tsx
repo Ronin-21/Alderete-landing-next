@@ -17,12 +17,14 @@ const VideoPlayer = ({ videoUrl }: VideoPlayerProps) => {
     <>
       {/* Solo renderiza ReactPlayer en el cliente */}
       {isClient && (
-        <ReactPlayer
-          url={videoUrl}
-          playing={false}
-          width="1080px"
-          height="720px"
-        />
+        <div className="relative w-full max-w-[1080px] aspect-video mx-auto px-5">
+          <ReactPlayer
+            url={videoUrl}
+            playing={false}
+            width="100%"
+            height="100%"
+          />
+        </div>
       )}
     </>
   );

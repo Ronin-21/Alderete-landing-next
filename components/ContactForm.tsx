@@ -21,7 +21,7 @@ const ContactForm = () => {
   const [isLoading, setIsLoading] = useState(false);
 
   // Handle submit
-  const onSubmit = async (data: FormData) => {
+  /* const onSubmit = async (data: FormData) => {
     setIsLoading(true);
 
     try {
@@ -36,17 +36,87 @@ const ContactForm = () => {
       });
 
       setIsLoading(false);
-      toast("🦄 Wow so easy!", {
-        position: "top-right",
-        autoClose: 5000,
-        hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
-        progress: undefined,
-        theme: "light",
-        transition: Bounce,
-      });
+      toast.success(
+        "Gracias por confiar en Alderete Informatica, nos comunicaremos en breve!!",
+        {
+          position: "top-center",
+          autoClose: 3000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          progress: undefined,
+          theme: "light",
+          transition: Bounce,
+        }
+      );
+      reset();
+    } catch (error) {
+      console.error("Error al enviar el formulario:", error);
+      alert("Hubo un error al enviar el formulario");
+    } finally {
+      setIsLoading(false);
+    }
+  }; */
+
+  const onSubmit = async (data: FormData) => {
+    setIsLoading(true);
+
+    try {
+      console.log("Data:", data);
+
+      await toast.promise(
+        createLead({
+          name: data.name,
+          email_from: data.email,
+          phone: data.phone,
+          service: data.service,
+          description: data.comment,
+        }),
+        {
+          pending: {
+            render: () => (
+              <div className="flex flex-col items-center justify-center w-full text-center p-4">
+                <p className="text-lg font-medium text-primary-dark">
+                  Enviando formulario...
+                </p>
+              </div>
+            ),
+            position: "top-center",
+            theme: "light",
+          },
+          success: {
+            render: () => {
+              return (
+                <div className="flex flex-col items-center justify-center w-full text-center p-4">
+                  <p className="text-lg font-bold text-primary-dark">
+                    ¡Gracias por confiar en Alderete Informática!
+                  </p>
+                  <p>Nos comunicaremos contigo pronto.</p>
+                </div>
+              );
+            },
+            theme: "light",
+            position: "top-center",
+            autoClose: 3000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            transition: Bounce,
+          },
+          error: {
+            render: () => (
+              <div className="flex flex-col items-center justify-center w-full text-center p-4">
+                <p>Hubo un error al enviar el formulario</p>
+              </div>
+            ),
+            theme: "light",
+            position: "top-center",
+            autoClose: 3000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            transition: Bounce,
+          },
+        }
+      );
+
       reset();
     } catch (error) {
       console.error("Error al enviar el formulario:", error);
@@ -55,6 +125,7 @@ const ContactForm = () => {
       setIsLoading(false);
     }
   };
+
   return (
     <div className="flex flex-col xl:flex-row items-center justify-center 2xl:w-2/3 xl:w-3/4 w-full h-[1000px] xl:h-[650px] border border-white/40 rounded-xl overflow-hidden">
       <div className="flex items-center justify-center xl:w-2/3 w-full h-full xl:p-20 p-5 bg-gradient-to-b from-primary to-transparent backdrop-blur-md">

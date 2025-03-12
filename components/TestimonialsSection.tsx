@@ -1,12 +1,15 @@
 import Image from "next/image";
+import TitleSections from "./TitleSections";
 
 const TestimonialsSection = () => {
   return (
     <div className="min-h-[700px] flex items-center justify-center my-10">
       <div className="container flex flex-col items-center justify-center gap-20">
-        <p className="xl:text-5xl text-4xl font-semibold text-primary font-title text-center">
-          Lo que nuestros clientes dicen de nosotros
-        </p>
+        <TitleSections>
+          <p className="xl:text-5xl text-4xl font-semibold text-primary font-title text-center">
+            Lo que nuestros clientes dicen de nosotros
+          </p>
+        </TitleSections>
         <div className="flex flex-col xl:flex-row items-center xl:items-start justify-center w-full gap-10 text-black">
           <div className="flex flex-col items-center gap-10 p-4 bg-transparent justify-evenly w-80">
             <Image

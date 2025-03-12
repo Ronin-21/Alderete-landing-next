@@ -1,12 +1,13 @@
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import ClientSideToastContainer from "@/components/ToastContainer";
+import WhatsappButton from "@/components/WhatsappButton";
 import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import type { Metadata } from "next";
 import { Exo_2, Lato } from "next/font/google";
-import "./globals.css";
 import Script from "next/script";
-import WhatsappButton from "@/components/WhatsappButton";
+import "./globals.css";
 
 const fontExo = Exo_2({
   variable: "--font-exo",
@@ -62,6 +63,7 @@ export default function RootLayout({
         <WhatsappButton />
         <Footer />
         <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );

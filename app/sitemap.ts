@@ -15,6 +15,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `${process.env.NEXT_PUBLIC_BASE_URL}/sistemas/wubook`,
     },
     {
+      url: `${process.env.NEXT_PUBLIC_BASE_URL}/sistemas/odoo`,
+    },
+    {
       url: `${process.env.NEXT_PUBLIC_BASE_URL}/sistemas/facil-virtual`,
     },
   ];

@@ -1,3 +1,4 @@
+import TitleSections from "@/components/TitleSections";
 import VideoPlayer from "@/components/VideoPlayer";
 import { Metadata } from "next";
 import Image from "next/image";
@@ -20,9 +21,9 @@ const Flexxus = () => {
                 width={200}
                 height={100}
               />
-              <p className="text-2xl font-semibold font-title text-primary-dark">
+              <h3 className="text-2xl font-semibold font-title text-primary-dark">
                 Sistema de Gestión ERP
-              </p>
+              </h3>
             </div>
             <p className="w-full">
               Flexxus es el software de gestión ERP más elegido de Argentina,
@@ -41,16 +42,18 @@ const Flexxus = () => {
           </div>
           <Image
             src="/flex_portada.png"
-            alt="portada"
+            alt="portada flexxus"
             className="xl:max-w-3xl w-full"
             width={768}
             height={100}
           />
         </div>
         <div className="flex flex-col items-center justify-center gap-10 w-full">
-          <p className="max-w-xl w-full xl:text-5xl text-3xl font-semibold text-center font-title text-primary-dark">
-            Mucho más que un Software de Gestión ERP
-          </p>
+          <TitleSections>
+            <p className="max-w-xl w-full xl:text-5xl text-3xl font-semibold text-center font-title text-primary-dark">
+              Mucho más que un Software de Gestión ERP
+            </p>
+          </TitleSections>
           <p className="max-w-4xl w-full xl:text-xl text-center">
             Estamos convencidos que la principal característica de un Software
             de Gestión ERP debe ser su simpleza y facilidad de uso, y este es

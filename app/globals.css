@@ -13,13 +13,3 @@
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
-
-.rfm-initial-child-container {
-  justify-content: space-evenly;
-  width: 100%;
-}
-
-.rfm-marquee {
-  justify-content: space-evenly;
-  width: 100%;
-}

@@ -1,3 +1,4 @@
+import TitleSections from "@/components/TitleSections";
 import VideoPlayer from "@/components/VideoPlayer";
 import { Metadata } from "next";
 import Image from "next/image";
@@ -8,10 +9,10 @@ export const metadata: Metadata = {
 
 const Odoo = () => {
   return (
-    <div className="flex items-center justify-center pb-40 bg-gray-100 pt-60">
+    <div className="flex items-center justify-center pb-40 bg-gray-100 xl:pt-60 pt-32">
       <div className="container flex flex-col items-center justify-center gap-40">
-        <div className="flex items-center justify-center gap-10">
-          <div className="flex flex-col items-start justify-center gap-10">
+        <div className="flex flex-col xl:flex-row w-full items-center justify-center gap-10 px-5">
+          <div className="flex flex-col items-start justify-center gap-10 w-full">
             <div>
               <Image
                 src="/logo_odoo.png"
@@ -20,11 +21,11 @@ const Odoo = () => {
                 width={250}
                 height={150}
               />
-              <p className="text-2xl font-semibold font-title text-primary-dark">
+              <h3 className="text-2xl font-semibold font-title text-primary-dark">
                 Sistema ERP de Gestión Empresarial
-              </p>
+              </h3>
             </div>
-            <p>
+            <p className="w-full">
               Odoo es un sistema de gestión empresarial (ERP) modular y de
               código abierto que ofrece soluciones integradas para optimizar
               todos los procesos de una empresa en una sola plataforma. Es
@@ -39,17 +40,19 @@ const Odoo = () => {
           </div>
           <Image
             src="/odoo_portada.png"
-            alt="portada"
-            className="max-w-3xl"
+            alt="portada odoo"
+            className="xl:max-w-3xl w-full"
             width={768}
             height={100}
           />
         </div>
-        <div className="flex flex-col items-center justify-center gap-10">
-          <p className="max-w-3xl text-5xl font-semibold text-center font-title text-primary-dark">
-            Sistema de Gestión Empresarial Integral
-          </p>
-          <p className="max-w-4xl text-xl text-center">
+        <div className="flex flex-col items-center justify-center gap-10 w-full">
+          <TitleSections>
+            <p className="max-w-xl w-full xl:text-5xl text-3xl font-semibold text-center font-title text-primary-dark">
+              Sistema de Gestión Empresarial Integral
+            </p>
+          </TitleSections>
+          <p className="max-w-4xl w-full xl:text-xl text-center">
             Odoo es una solución flexible y escalable que se adapta a cualquier
             tipo de negocio, desde startups hasta grandes corporaciones.
           </p>

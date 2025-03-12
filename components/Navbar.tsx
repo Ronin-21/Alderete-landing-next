@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { IoIosArrowForward } from "react-icons/io";
-import { FiMenu, FiX } from "react-icons/fi"; // Íconos para el menú hamburguesa
+import { FiMenu, FiX } from "react-icons/fi";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);

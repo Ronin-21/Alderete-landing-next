@@ -20,43 +20,6 @@ const ContactForm = () => {
   const { register, handleSubmit, reset } = useForm<FormData>();
   const [isLoading, setIsLoading] = useState(false);
 
-  // Handle submit
-  /* const onSubmit = async (data: FormData) => {
-    setIsLoading(true);
-
-    try {
-      console.log("Data:", data);
-
-      await createLead({
-        name: data.name,
-        email_from: data.email,
-        phone: data.phone,
-        service: data.service,
-        description: data.comment,
-      });
-
-      setIsLoading(false);
-      toast.success(
-        "Gracias por confiar en Alderete Informatica, nos comunicaremos en breve!!",
-        {
-          position: "top-center",
-          autoClose: 3000,
-          hideProgressBar: false,
-          closeOnClick: true,
-          progress: undefined,
-          theme: "light",
-          transition: Bounce,
-        }
-      );
-      reset();
-    } catch (error) {
-      console.error("Error al enviar el formulario:", error);
-      alert("Hubo un error al enviar el formulario");
-    } finally {
-      setIsLoading(false);
-    }
-  }; */
-
   const onSubmit = async (data: FormData) => {
     setIsLoading(true);
 

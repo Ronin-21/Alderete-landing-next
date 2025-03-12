@@ -1,3 +1,4 @@
+import TitleSections from "@/components/TitleSections";
 import VideoPlayer from "@/components/VideoPlayer";
 import { Metadata } from "next";
 import Image from "next/image";
@@ -8,23 +9,23 @@ export const metadata: Metadata = {
 
 const Fudo = () => {
   return (
-    <div className="flex items-center justify-center pb-40 bg-gray-100 pt-60">
+    <div className="flex items-center justify-center pb-40 bg-gray-100 xl:pt-60 pt-32">
       <div className="container flex flex-col items-center justify-center gap-40">
-        <div className="flex items-center justify-center gap-10">
-          <div className="flex flex-col items-start justify-center gap-10">
+        <div className="flex flex-col xl:flex-row w-full items-center justify-center gap-10 px-5">
+          <div className="flex flex-col items-start justify-center gap-10 w-full">
             <div>
               <Image
                 src="/logo_fudo.svg"
-                alt="flexxus logo"
+                alt="fudo logo"
                 className="mb-3 h-14"
                 width={200}
                 height={100}
               />
-              <p className="text-2xl font-semibold font-title text-primary-dark">
+              <h3 className="text-2xl font-semibold font-title text-primary-dark">
                 Software para Restaurantes, Bares y Cafés
-              </p>
+              </h3>
             </div>
-            <p>
+            <p className="w-full">
               Más de 25.000 negocios nos eligen en Latinoamérica. Un software
               simple pero potente. Fudo es una aplicación web diseñada para
               administrar y gestionar negocios gastronómicos, como bares, cafés
@@ -41,17 +42,19 @@ const Fudo = () => {
           </div>
           <Image
             src="/fudo_portada.webp"
-            alt="portada"
-            className="max-w-3xl"
+            alt="portada fudo"
+            className="xl:max-w-3xl w-full"
             width={768}
             height={100}
           />
         </div>
-        <div className="flex flex-col items-center justify-center gap-10">
-          <p className="max-w-xl text-5xl font-semibold text-center font-title text-primary-dark">
-            Transformá tu negocio gastronómico con Fudo
-          </p>
-          <p className="max-w-4xl text-xl text-center">
+        <div className="flex flex-col items-center justify-center gap-10 w-full">
+          <TitleSections>
+            <p className="max-w-xl w-full xl:text-5xl text-3xl font-semibold text-center font-title text-primary-dark">
+              Transformá tu negocio gastronómico con Fudo
+            </p>
+          </TitleSections>
+          <p className="max-w-4xl w-full xl:text-xl text-center">
             Tomá órdenes, emití comandas y cerrá ventas, evitando los errores
             del lápiz y el papel también con nuestra aplicación móvil.
           </p>

@@ -1,6 +1,7 @@
 import AboutSection from "@/components/AboutSection";
 import Banner from "@/components/Banner";
 import ContactSection from "@/components/ContactSection";
+import CustomersSection from "@/components/CustomersSection";
 import Hero from "@/components/Hero";
 import MidBanner from "@/components/MidBanner";
 import ServicesSection from "@/components/ServicesSection";
@@ -15,6 +16,7 @@ export default function Home() {
       <ServicesSection />
       <MidBanner />
       <TestimonialsSection />
+      <CustomersSection />
       <ContactSection />
     </>
   );

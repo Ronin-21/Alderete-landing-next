@@ -1,70 +1,66 @@
 import Image from "next/image";
-import TitleSections from "./TitleSections";
 
 const TestimonialsSection = () => {
   return (
     <div className="min-h-[700px] flex items-center justify-center my-10">
       <div className="container flex flex-col items-center justify-center gap-20">
-        <TitleSections>
-          <p className="xl:text-5xl text-4xl font-semibold text-primary font-title text-center">
-            Lo que nuestros clientes dicen de nosotros
+        <div className="flex flex-col items-center gap-5">
+          <h3 className="xl:text-5xl text-4xl font-semibold text-primary font-title text-center">
+            Nuestro equipo de expertos
+          </h3>
+          <p className="text-lg text-secondary text-center max-w-lg">
+            Conoce a las mentes detrás de nuestra plataforma y cómo trabajamos
           </p>
-        </TitleSections>
-        <div className="flex flex-col xl:flex-row items-center xl:items-start justify-center w-full gap-10 text-black">
-          <div className="flex flex-col items-center gap-10 p-4 bg-transparent justify-evenly w-80">
-            <Image
-              src="/user_1.jpg"
-              alt="Shoes"
-              className="object-cover object-center w-40 h-40 border-2 rounded-full shadow-xl border-primary"
-              width={160}
-              height={160}
-            />
+        </div>
+        <div className="flex flex-col xl:flex-row items-center xl:items-start justify-center w-full gap-5 text-black">
+          <div className="flex flex-col items-center gap-5 p-4 bg-transparent justify-evenly w-auto">
+            <div className="custom-border relative">
+              <Image
+                src="/user_1.jpg"
+                alt="user 1"
+                className="object-cover object-center w-40 h-40 border-2 rounded-full shadow-xl"
+                width={160}
+                height={160}
+              />
+            </div>
             <div className="flex flex-col items-center gap-1 text-lg text-center">
-              <p className="text-sm">
-                “Gracias a Alderete Informática, hemos logrado automatizar
-                nuestros procesos y mejorar nuestra productividad en tiempo
-                récord. ¡Su equipo es excepcional!”
-              </p>
-              <p className="mt-4 text-xl font-semibold">Juan Pérez</p>
+              <p className="mt-2 text-xl font-semibold">Juan Pérez</p>
               <p className="text-sm text-gray-500">
                 Gerente de Operaciones, TechCorp
               </p>
             </div>
           </div>
-          <div className="flex flex-col items-center gap-10 p-4 bg-transparent justify-evenly w-80">
-            <Image
-              src="/user_1.jpg"
-              alt="Shoes"
-              className="object-cover object-center w-40 h-40 border-2 rounded-full shadow-xl border-primary"
-              width={160}
-              height={160}
-            />
+          <div className="flex flex-col items-center gap-5 p-4 bg-transparent justify-evenly w-auto">
+            <div className="custom-border relative">
+              <Image
+                src="/user_1.jpg"
+                alt="user 1"
+                className="object-cover object-center w-40 h-40 border-2 rounded-full shadow-xl"
+                width={160}
+                height={160}
+              />
+            </div>
             <div className="flex flex-col items-center gap-1 text-lg text-center">
-              <p className="text-sm">
-                “El soporte técnico que brindan es rápido y eficiente. Saber que
-                siempre están disponibles nos da tranquilidad total.”
+              <p className="mt-2 text-xl font-semibold">Juan Pérez</p>
+              <p className="text-sm text-gray-500">
+                Gerente de Operaciones, TechCorp
               </p>
-              <p className="mt-4 text-xl font-semibold">María González</p>
-              <p className="text-sm text-gray-500">CEO, Innovate Solutions</p>
             </div>
           </div>
-          <div className="flex flex-col items-center gap-10 p-4 bg-transparent justify-evenly w-80">
-            <Image
-              src="/user_1.jpg"
-              alt="Shoes"
-              className="object-cover object-center w-40 h-40 border-2 rounded-full shadow-xl border-primary"
-              width={160}
-              height={160}
-            />
+          <div className="flex flex-col items-center gap-5 p-4 bg-transparent justify-evenly w-auto">
+            <div className="custom-border relative">
+              <Image
+                src="/user_1.jpg"
+                alt="user 1"
+                className="object-cover object-center w-40 h-40 border-2 rounded-full shadow-xl"
+                width={160}
+                height={160}
+              />
+            </div>
             <div className="flex flex-col items-center gap-1 text-lg text-center">
-              <p className="text-sm">
-                “La seguridad de nuestros datos ha mejorado considerablemente
-                gracias a sus servicios. Recomiendo Alderete Informática a
-                cualquier empresa que valore la excelencia.”
-              </p>
-              <p className="mt-4 text-xl font-semibold">Carlos Ramírez</p>
+              <p className="mt-2 text-xl font-semibold">Juan Pérez</p>
               <p className="text-sm text-gray-500">
-                Director de IT, SecureTech
+                Gerente de Operaciones, TechCorp
               </p>
             </div>
           </div>

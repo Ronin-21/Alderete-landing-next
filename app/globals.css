@@ -13,3 +13,21 @@
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
+
+.swiper-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.custom-border::before {
+  content: "";
+  position: absolute;
+  top: -8px; /* Ajusta según tu diseño */
+  left: -8px; /* Ajusta según tu diseño */
+  width: calc(100% + 10px); /* Ajusta según tu diseño */
+  height: calc(100% + 6px); /* Ajusta según tu diseño */
+  /* border: 2px solid #f4b400; */ /* Color y grosor del borde extra */
+  border: 2px solid #003fa9; /* Color y grosor del borde extra */
+  border-radius: 50%; /* Ajusta el radio según tu diseño */
+  z-index: -1;
+}

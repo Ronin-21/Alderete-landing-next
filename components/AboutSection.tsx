@@ -7,9 +7,9 @@ const AboutSection = () => {
     <div className="pt-24 pb-32 px-5 bg-background" id="about">
       <div className="container flex flex-col xl:flex-row items-center justify-around mx-auto gap-20">
         <div className="2xl:max-w-[600px] xl:w-1/2 flex flex-col items-start gap-8">
-          <p className="text-3xl font-semibold font-title text-primary-dark">
+          <h2 className="text-3xl font-semibold font-title text-primary-dark">
             Soluciones Tecnológicas a la Medida de tu Empresa
-          </p>
+          </h2>
           <p className="text-secondary">
             En{" "}
             <span className="font-bold text-primary-dark">
@@ -43,9 +43,9 @@ const AboutSection = () => {
           />
           <div className="xl:w-[500px] w-full shadow-xl rounded-xl flex flex-col items-center justify-between p-5 xl:absolute xl:-bottom-14 xl:-left-12 bg-white gap-2">
             <FaLightbulb className="text-5xl text-primary-light" />
-            <p className="text-xl font-semibold font-title text-primary-dark">
+            <h3 className="text-xl font-semibold font-title text-primary-dark">
               Soporte Personalizado y Continuo
-            </p>
+            </h3>
             <p className="text-center text-secondary">
               Nuestro equipo de expertos está siempre listo para ofrecerte
               soporte personalizado y mantenimiento de los sistemas que impulsan

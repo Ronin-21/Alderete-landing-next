@@ -72,7 +72,10 @@ const Footer = () => {
         <div className="w-full mt-6 border-b border-primary-dark/50"></div>
         <p className="text-sm text-gray-500 text-center">
           © 2025 Alderete Informática y Soporte. Todos los derechos reservados.{" "}
-          <a href="#" className="text-primary hover:underline font-semibold">
+          <a
+            href="/terminos"
+            className="text-primary hover:underline font-semibold"
+          >
             Política de Privacidad
           </a>
         </p>

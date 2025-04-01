@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { Fade, Slide } from "react-awesome-reveal";
 
 const TitleHero = () => {
@@ -22,9 +23,12 @@ const TitleHero = () => {
         </Fade>
       </Slide>
       <Slide triggerOnce direction="right" duration={2000}>
-        <button className="py-3 mt-5 font-semibold text-white transition-all bg-transparent border-2 shadow-2xl px-7 rounded-3xl hover:bg-accent hover:text-primary-dark hover:border-primary-dark">
+        <Link
+          href={"/contacto"}
+          className="py-3 mt-5 font-semibold text-white transition-all bg-transparent border-2 shadow-2xl px-7 rounded-3xl hover:bg-accent hover:text-primary-dark hover:border-primary-dark"
+        >
           Agenda una Consulta
-        </button>
+        </Link>
       </Slide>
     </>
   );

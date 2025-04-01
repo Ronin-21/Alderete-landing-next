@@ -39,29 +39,32 @@ const CustomersSection = () => {
         Conocé a algunos de nuestros clientes
       </h3>
       <Swiper
-        spaceBetween={0} // Espaciado entre tarjetas
-        slidesPerView={4} // Ajusta según el tamaño de cada tarjeta
+        spaceBetween={20} // Espaciado entre tarjetas
+        slidesPerView={3} // Ajusta según el tamaño de cada tarjeta
+        centeredSlides={true} // Mantiene 3 tarjetas centradas
         loop={true}
         autoplay={{ delay: 2500, disableOnInteraction: false }}
         modules={[Autoplay]}
-        className="w-full max-w-5xl" // Limita el ancho total del slider
+        className="w-full xl:max-w-5xl" // Limita el ancho total del slider
         grabCursor={true} // Cambia el cursor al hacer hover
         breakpoints={{
           0: { slidesPerView: 1 }, // 1 tarjeta en pantallas pequeñas
           640: { slidesPerView: 2 }, // 2 tarjetas en tablets
-          1024: { slidesPerView: 4 }, // 3 tarjetas en laptops
+          1024: { slidesPerView: 3 }, // 3 tarjetas en laptops
         }}
       >
         {customersLogos.map((logo, index) => {
           return (
             <SwiperSlide key={index} className="grayscale">
-              <Image
-                src={logo.image}
-                alt={logo.title}
-                width={200}
-                height={150}
-                className="mx-5"
-              />
+              <div className="flex items-center justify-center px-5">
+                <Image
+                  src={logo.image}
+                  alt={logo.title}
+                  width={200}
+                  height={150}
+                  className=""
+                />
+              </div>
             </SwiperSlide>
           );
         })}
